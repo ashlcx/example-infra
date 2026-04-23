@@ -15,7 +15,7 @@ resource "random_pet" "name" {
 
 variable "length" {
   type = number
-  default = 32
+  default = 16
 }
 
 # Additional resource that depends on random_pet
