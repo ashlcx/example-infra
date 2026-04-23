@@ -20,7 +20,7 @@ variable "length" {
 
 # Additional resource that depends on random_pet
 resource "random_password" "derived" {
-  length  = 32
+  length  = var.length
   special = true
 
   # This forces dependency so your state viewer sees a relationship
